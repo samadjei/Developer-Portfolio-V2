@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { FiMenu } from 'react-icons/fi';
 import { FiX } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
 					))}
 				</ul>
 				<div className="relative md:hidden block">
-					<ul className={isOpen ? 'fixed flex left-0 right-0 px-8 top-20 gap-8 flex-col w-full bg-section-bg text-headline z-30 pb-8 shadow' : 'hidden'}>
+					<motion.ul whileInView={{ y: [-300, 0] }} transition={{ duration: 0.85, ease: 'easeOut' }} className={isOpen ? 'fixed flex left-0 right-0 px-8 top-20 gap-8 flex-col w-full bg-section-bg text-headline z-30 pb-8 shadow' : 'hidden'}>
 						{['home', 'about', 'contact', 'work', 'skills'].map((item) => (
 							<li key={`link-${{ item }}`}>
 								<a className="capitalize" href={`#${{ item }}`}>
@@ -34,7 +35,7 @@ const Navbar = () => {
 								</a>
 							</li>
 						))}
-					</ul>
+					</motion.ul>
 				</div>
 				{isOpen ? <FiX className="md:hidden cursor-pointer text-3xl" onClick={menuToggle} /> : <FiMenu className="md:hidden cursor-pointer text-3xl" onClick={menuToggle} />}
 			</div>
