@@ -1,0 +1,38 @@
+export const Work = [
+	{
+		id: 0,
+		title: 'Freelance Portfolio',
+		description: 'lorem ipsum',
+		image: '/assets/images/Freelance_Web_Developer.png',
+		tags: ['React', 'Gatsby', 'Strapi'],
+		link: 'https://samadjei.com/',
+		github: 'https://github.com/samadjei/netlify-gatsby-portfolio',
+	},
+	{
+		id: 1,
+		title: 'GitHub user search app',
+		description: 'GitHub users API to pull profile data and display it',
+		image: '/assets/images/GitHub_User_Search_App.png',
+		tags: ['HTML', 'CSS', 'JavaScript'],
+		link: 'https://github-user-search-app-sable.vercel.app/',
+		github: 'https://github.com/samadjei/github-user-search-app',
+	},
+	{
+		id: 2,
+		title: 'Tip Calculator',
+		description: 'Tip calculator',
+		image: '/assets/images/Tip_Calculator_App.png',
+		tags: ['React', 'Gatsby', 'Strapi'],
+		link: '/assets/images/Tip_Calculator_App.png',
+		github: 'https://github.com/samadjei/Tip-Calculator-App',
+	},
+	{
+		id: 3,
+		title: 'Loopstudios Landing Page',
+		description: 'lorem ipsum',
+		image: '/assets/images/Loopstudios_Landing_Page.png',
+		tags: ['HTML', 'CSS', 'JavaScript'],
+		link: 'https://loopstudio-landing-page-beta.vercel.app/',
+		github: 'https://github.com/samadjei/loopstudio-landing-page',
+	},
+];
