@@ -45,5 +45,17 @@ export default {
 				},
 			],
 		},
+		{
+			name: 'categories',
+			title: 'Categories',
+			type: 'array',
+			of: [
+				{
+					name: 'categories',
+					title: 'Categories',
+					type: 'string',
+				},
+			],
+		},
 	],
 };
