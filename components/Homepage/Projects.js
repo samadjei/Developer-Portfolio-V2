@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { FiExternalLink } from 'react-icons/fi';
 import { FiGithub } from 'react-icons/fi';
+import Headers from '../../constants/Headers';
 import { Work } from '../../constants/Work';
 
 const Projects = () => {
 	return (
 		<section id="projects">
-			<h2 className="text-4xl pb-8">Projects</h2>
+			<Headers title="Projects" />
 			<div className="grid  md:grid-cols-2 items-center gap-8 gap-y-14 min-h-full">
 				{Work.map(({ id, image, title, description, tags, link, github }) => (
 					<div className="card-bg" key={id}>

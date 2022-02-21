@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { urlFor, client } from '../../client';
 import Image from 'next/image';
+import Headers from '../../constants/Headers';
 
 const About = () => {
 	const [about, setAbout] = useState([]);
@@ -22,7 +23,7 @@ const About = () => {
 					<div key={about.title + index}>
 						{/* <img src={urlFor(about.imgUrl)} alt={about.title} />{ */}
 						{/* <Image src={urlFor(about.imgUrl)} alt={about.title} width={250} height={250} /> */}
-						<h2 className="text-4xl pb-8 text-center ">{about.title}</h2>
+						<Headers title="About" />
 						<p className="text-base md:text-xl w-5/6 text-center m-auto">{about.content}</p>
 					</div>
 				))}

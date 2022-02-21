@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { urlFor, client } from '../../client';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
+import Headers from '../../constants/Headers';
 
 const Work = () => {
 	const [works, setWorks] = useState([]);
@@ -35,7 +36,7 @@ const Work = () => {
 
 	return (
 		<section id="work" className="pb-24">
-			<h2 className="text-4xl pb-8">Portfolio</h2>
+			<Headers title="Projects" />
 			<div className="flex justify-center gap-6 pb-16 cursor-pointer ">
 				{['JavaScript', 'React JS', 'All'].map((item, index) => (
 					<div key={index} onClick={() => handleWorkFilter(item)} className={`rounded bg-button text-button-text flex place-items-center py-2 px-4 ${activeFilter === item ? ' bg-tertiary text-headline' : ''}`}>

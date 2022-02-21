@@ -3,6 +3,7 @@ import { urlFor, client } from '../../client';
 import { motion } from 'framer-motion';
 import ReactTooltip from 'react-tooltip';
 import Frameworks from '../../constants/Frameworks';
+import Headers from '../../constants/Headers';
 
 const Skills = () => {
 	const [experiences, setExperiences] = useState([]);
@@ -22,7 +23,7 @@ const Skills = () => {
 	}, []);
 	return (
 		<section className="pb-24" id="skills">
-			<h2 className="text-4xl pb-8 text-center">Skills</h2>
+			<Headers title="Skills" />
 			<div className="app__skills-container flex flex-wrap gap-14 justify-between w-9/12 mx-auto">
 				<Frameworks />
 
