@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { urlFor, client } from '../../client';
 import { motion } from 'framer-motion';
-import { images } from '../../constants/Images';
+import ReactTooltip from 'react-tooltip';
+import Frameworks from '../../constants/Frameworks';
 
 const Skills = () => {
 	const [experiences, setExperiences] = useState([]);
@@ -20,8 +21,34 @@ const Skills = () => {
 		});
 	}, []);
 	return (
-		<section id="skills">
-			<h2>Skills</h2>
+		<section className="pb-24" id="skills">
+			<h2 className="text-4xl pb-8 text-center">Skills</h2>
+			<div className="app__skills-container flex flex-wrap gap-14 justify-between w-9/12 mx-auto">
+				<Frameworks />
+
+				<div className="app__skills-exp">
+					{experiences.map((experience) => (
+						<motion.div className="flex items-start gap-4" key={experience.year}>
+							<div className="app__skills-exp-year">
+								<p className="font-bold">{experience.year}</p>
+							</div>
+							<motion.div className="app__skills-exp-works cursor-pointer">
+								{experience.works.map((work) => (
+									<>
+										<motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }} className="app__skills-exp-work" data-tip data-for={work.name} key={work.name}>
+											<h4 className="bold-text">{work.name}</h4>
+											<p className="p-text">{work.company}</p>
+										</motion.div>
+										<ReactTooltip id={work.name} effect="solid" arrowColor="#fff" className="skills-tooltip">
+											{work.desc}
+										</ReactTooltip>
+									</>
+								))}
+							</motion.div>
+						</motion.div>
+					))}
+				</div>
+			</div>
 		</section>
 	);
 };
