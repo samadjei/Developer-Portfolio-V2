@@ -35,7 +35,7 @@ const Work = () => {
 	};
 
 	return (
-		<section id="work" className="pb-24">
+		<section id="work" className="pb-28">
 			<Headers title="Projects" />
 			<div className="flex justify-center gap-6 pb-16 cursor-pointer ">
 				{['JavaScript', 'React JS', 'All'].map((item, index) => (

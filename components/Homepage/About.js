@@ -17,13 +17,13 @@ const About = () => {
 	}, []);
 
 	return (
-		<section id="about" className="pb-10 ">
+		<section id="about" className="pb-28">
 			<div>
 				{about.map((about, index) => (
 					<div key={about.title + index}>
 						{/* <img src={urlFor(about.imgUrl)} alt={about.title} />{ */}
 						{/* <Image src={urlFor(about.imgUrl)} alt={about.title} width={250} height={250} /> */}
-						<Headers title="About" />
+						<Headers className="text-5xl pb-10 text-center uppercase" title="About" />
 						<p className="text-base md:text-xl w-5/6 text-center m-auto">{about.content}</p>
 					</div>
 				))}

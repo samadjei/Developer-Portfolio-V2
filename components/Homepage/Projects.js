@@ -6,7 +6,7 @@ import { Work } from '../../constants/Work';
 
 const Projects = () => {
 	return (
-		<section id="projects">
+		<section  id="projects">
 			<Headers title="Projects" />
 			<div className="grid  md:grid-cols-2 items-center gap-8 gap-y-14 min-h-full">
 				{Work.map(({ id, image, title, description, tags, link, github }) => (

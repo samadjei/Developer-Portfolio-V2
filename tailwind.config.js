@@ -23,7 +23,7 @@ module.exports = {
 				'section-card-heading': '#fffffe',
 				'section-card-text': '#abd1c6',
 			},
-			height: { 90: '88vh' },
+			height: { 90: '97vh' },
 		},
 	},
 	variants: {

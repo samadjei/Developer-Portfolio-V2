@@ -7,10 +7,11 @@ import { SiReact } from 'react-icons/si';
 import { SiFigma } from 'react-icons/si';
 import { SiGatsby } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
+import { SiStrapi } from 'react-icons/si';
 
 const Frameworks = () => {
 	return (
-		<motion.div className="grid grid-cols-4 gap-6" whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }}>
+		<>
 			<div className="flex flex-col items-center text-center gap-3">
 				<SiHtml5 className="text-6xl" />
 				<p>HTML</p>
@@ -43,7 +44,11 @@ const Frameworks = () => {
 				<SiFigma className="text-6xl" />
 				<p>Figma</p>
 			</div>
-		</motion.div>
+			<div className="flex flex-col items-center text-center gap-3">
+				<SiStrapi className="text-6xl" />
+				<p>Strapi</p>
+			</div>
+		</>
 	);
 };
 

@@ -5,6 +5,15 @@ import ReactTooltip from 'react-tooltip';
 import Frameworks from '../../constants/Frameworks';
 import Headers from '../../constants/Headers';
 
+import { SiHtml5 } from 'react-icons/si';
+import { SiCss3 } from 'react-icons/si';
+import { SiJavascript } from 'react-icons/si';
+import { SiSass } from 'react-icons/si';
+import { SiReact } from 'react-icons/si';
+import { SiFigma } from 'react-icons/si';
+import { SiGatsby } from 'react-icons/si';
+import { SiNextdotjs } from 'react-icons/si';
+
 const Skills = () => {
 	const [experiences, setExperiences] = useState([]);
 	const [skills, setSkills] = useState([]);
@@ -25,7 +34,9 @@ const Skills = () => {
 		<section className="pb-24" id="skills">
 			<Headers title="Skills" />
 			<div className="app__skills-container flex flex-wrap gap-14 justify-between w-9/12 mx-auto">
-				<Frameworks />
+				<motion.div className="grid grid-cols-4 gap-6" whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }}>
+					<Frameworks />
+				</motion.div>
 
 				<div className="app__skills-exp">
 					{experiences.map((experience) => (
