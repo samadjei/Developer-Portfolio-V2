@@ -20,7 +20,7 @@ const Navbar = () => {
 				<ul className="gap-8 hidden md:flex items-center text-lg">
 					{['home', 'about', 'contact', 'work', 'skills'].map((item) => (
 						<li key={`link-${{ item }}`}>
-							<a className="capitalize" href={`#${{ item }}`}>
+							<a className="capitalize" href={`#${item}`}>
 								{item}
 							</a>
 						</li>
@@ -30,7 +30,7 @@ const Navbar = () => {
 					<motion.ul whileInView={{ y: [-300, 0] }} transition={{ duration: 0.85, ease: 'easeOut' }} className={isOpen ? 'fixed flex left-0 right-0 px-8 top-20 gap-8 flex-col w-full bg-section-bg text-headline z-30 pb-8 shadow' : 'hidden'}>
 						{['home', 'about', 'contact', 'work', 'skills'].map((item) => (
 							<li key={`link-${{ item }}`}>
-								<a className="capitalize" href={`#${{ item }}`}>
+								<a className="capitalize" href={`#${item}`}>
 									{item}
 								</a>
 							</li>

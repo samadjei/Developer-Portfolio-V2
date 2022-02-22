@@ -23,7 +23,7 @@ const Hero = () => {
 
 					<div className="flex items-center gap-4 cursor-pointer">
 						<FiEye className="text-xl" />
-						<a href="#projects">View my work</a>
+						<a href="#work">View my work</a>
 					</div>
 				</div>
 			</div>
