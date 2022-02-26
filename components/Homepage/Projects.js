@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import { FiExternalLink } from 'react-icons/fi';
 import { FiGithub } from 'react-icons/fi';
 import Headers from '../../constants/Headers';
