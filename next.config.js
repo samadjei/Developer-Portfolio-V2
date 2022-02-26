@@ -1,4 +1,4 @@
 module.exports = {
 	reactStrictMode: true,
-	domains: ['assets'],
+	domains: ['cdn.sanity.io'],
 };

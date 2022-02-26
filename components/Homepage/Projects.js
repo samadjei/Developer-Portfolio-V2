@@ -12,8 +12,8 @@ const Projects = () => {
 				{Work.map(({ id, image, title, description, tags, link, github }) => (
 					<div className="card-bg" key={id}>
 						<div>
-							{/* <Image src={image} alt={title} width={500} height={250} objectFit="cover" /> */}
-							<img src={image} alt="" />
+							{/* <Image src={image} alt={title} width={500} height={250} /> */}
+							<img src={image} alt={title} />
 						</div>
 						<div className="pt-4">
 							<h3 className="pb-4">{title}</h3>

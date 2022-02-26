@@ -12,7 +12,7 @@ import { SiStrapi } from 'react-icons/si';
 const Frameworks = () => {
 	return (
 		<>
-			<div className="flex flex-col items-center text-center gap-3">
+			<div className="flex flex-col flex-wrap items-center text-center gap-3">
 				<SiHtml5 className="text-6xl" />
 				<p>HTML</p>
 			</div>
