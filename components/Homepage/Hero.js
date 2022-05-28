@@ -11,7 +11,7 @@ const Hero = () => {
 				<h2 className="lg:text-9xl md:text-7xl text-6xl pt-4 pb-6 text-center">Sam Adjei</h2>
 				<p className="text-lg md:text-xl md:w-9/12 text-center">I self-taught web developer from Slough, UK specialising in building JavaScript-based websites and applications.</p>
 				<div className="flex gap-8 items-center pt-8 md:flex-row flex-col ">
-					<a href="/assets/CV_Samuel_Adjei.pdf" download>
+					<a href="/assets/Samuel_Adjei_CV.pdf" download>
 						<Button>
 							<FiDownload className="text-xl text-button-text" />
 							Download Resume
